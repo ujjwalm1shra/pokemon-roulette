@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pokemon Stat Roulette</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../Layout/styles.css">
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <div class="pokemon-perimeter" id="pokemonPerimeter" aria-hidden="true"></div>
 <div class="app">
-  <div class="title"><img class="title-pokeball" src="../assets/pokeball-custom.png" alt="">POKEMON STAT ROULETTE<img class="title-pokeball" src="../assets/pokeball-custom.png" alt=""></div>
+  <div class="title"><img class="title-pokeball" src="./assets/pokeball-custom.png" alt="">POKEMON STAT ROULETTE<img class="title-pokeball" src="./assets/pokeball-custom.png" alt=""></div>
 
   <div class="card pokemon-display">
     <p class="loader" id="loader">Loading Gen 1 Pokemon...</p>
@@ -19,7 +19,7 @@
       <img class="pokemon-img" id="pokeImg" alt="Current Pokemon">
     </div>
     <br><br>
-    <button id="spinBtn" disabled><img class="button-pokeball" src="../assets/pokeball-custom.png" alt="">SPIN</button>
+    <button id="spinBtn" disabled><img class="button-pokeball" src="./assets/pokeball-custom.png" alt="">SPIN</button>
     <div class="stat-choices" id="statChoices">
       <button data-stat="hp">HP</button>
       <button data-stat="attack">Attack</button>
@@ -60,6 +60,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-<script src="../Logic/script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
