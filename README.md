@@ -10,7 +10,7 @@ After six rounds, the game calculates your final stat total, determines whether 
 
 **[Play Pokémon Stat Roulette →](#)**
 
-> Replace the link above with your deployed GitHub Pages / Vercel / Netlify URL.
+> https://ujjwalm1shra.github.io/pokemon-roulette/
 
 ---
 
