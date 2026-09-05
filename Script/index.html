@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokemon Stat Roulette</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Layout/styles.css">
+</head>
+<body>
+<div class="pokemon-perimeter" id="pokemonPerimeter" aria-hidden="true"></div>
+<div class="app">
+  <div class="title"><img class="title-pokeball" src="../assets/pokeball-custom.png" alt="">POKEMON STAT ROULETTE<img class="title-pokeball" src="../assets/pokeball-custom.png" alt=""></div>
+
+  <div class="card pokemon-display">
+    <p class="loader" id="loader">Loading Gen 1 Pokemon...</p>
+    <div class="pokemon-name" id="pokemonName">---</div>
+    <div class="pokemon-stage" aria-label="Current Pokemon display">
+      <img class="pokemon-img" id="pokeImg" alt="Current Pokemon">
+    </div>
+    <br><br>
+    <button id="spinBtn" disabled><img class="button-pokeball" src="../assets/pokeball-custom.png" alt="">SPIN</button>
+    <div class="stat-choices" id="statChoices">
+      <button data-stat="hp">HP</button>
+      <button data-stat="attack">Attack</button>
+      <button data-stat="defense">Defense</button>
+      <button data-stat="special-attack">Sp. Atk</button>
+      <button data-stat="special-defense">Sp. Def</button>
+      <button data-stat="speed">Speed</button>
+    </div>
+    <button id="replayBtn">Replay</button>
+  </div>
+
+  <div class="card">
+    <h3>Your Custom Pokemon</h3>
+    <div class="stats" id="stats"></div>
+    <div class="score-box">
+      <div class="score" id="score">0</div>
+      <div class="status" id="status">-</div>
+    </div>
+  </div>
+
+  <div class="card closest">
+    <h3>Closest Real Pokemon</h3>
+    <div id="closestName">-</div>
+    <div class="pokemon-stage" aria-label="Closest Pokemon display">
+      <img id="closestImg" class="pokemon-img" alt="Closest Pokemon">
+    </div>
+    <div id="closestTotal"></div>
+    <div class="pokemon-card" id="closestCard">
+      <h2 id="cardName"></h2>
+      <img id="cardImg" alt="Pokemon card artwork">
+      <p id="cardFlavor"></p>
+      <div id="cardStats"></div>
+      <p><b>Moves:</b> <span id="cardMoves"></span></p>
+      <p><b>Evolution:</b> <span id="cardEvo"></span></p>
+      <button id="downloadCardBtn">Download Card</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="../Logic/script.js"></script>
+</body>
+</html>
